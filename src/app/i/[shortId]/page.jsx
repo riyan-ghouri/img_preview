@@ -6,7 +6,7 @@ import ImageLoader from "@/app/components/ImageLoader";
 
 // fetch from API
 async function getImage(shortId) {
-  const res = await fetch(`https://preview-img.vercel.app/api/${shortId}`, {
+  const res = await fetch(`https://img-previews.vercel.app/api/${shortId}`, {
     cache: "no-store",
   });
   if (!res.ok) return null;
